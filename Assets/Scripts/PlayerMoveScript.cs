@@ -5,11 +5,11 @@ using UnityEngine.Serialization;
 
 public class PlayerMoveScript : MonoBehaviour
 {
-    public GameObject legs;
     public AnimationManager animator;
     public float shiftRotation = 90f;
     public float speed;
     public bool isMove = true;
+    public bool isDead = false;
 
     private Rigidbody2D _rb;
     public float x;
@@ -34,6 +34,7 @@ public class PlayerMoveScript : MonoBehaviour
     {
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
+
     }
     private void FixedUpdate()
     {
@@ -46,7 +47,7 @@ public class PlayerMoveScript : MonoBehaviour
 
     private void MoveManager()
     {
-        if (y > 0)
+        if (y >= 0)
             animator.State = States.MoveUp;
         else
             animator.State = States.MoveDown;
@@ -72,4 +73,5 @@ public class PlayerMoveScript : MonoBehaviour
         var angle = new Vector3(0, 0, Mathf.Atan2(dy, dx) * Mathf.Rad2Deg + shiftRotation);
         _rb.transform.eulerAngles = angle;
     }
+    
 }
