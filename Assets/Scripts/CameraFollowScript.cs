@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraFollowScript : MonoBehaviour
 {
     public PlayerMoveScript playerScript;
-    public float shiftCameraRotation = 1f;
+    public float shiftCameraRotation = 0.8f;
     
     private Transform _player;
     private Vector3 _position;

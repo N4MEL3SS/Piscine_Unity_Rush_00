@@ -18,13 +18,10 @@ public class PlayerMoveScript : MonoBehaviour
     private Vector3 _direct;
     private Vector3 _mousePosition;
     
-    // private Animator _animator;
-
     // Start is called before the first frame update
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
-        // _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -65,11 +62,6 @@ public class PlayerMoveScript : MonoBehaviour
         isMove = false;
     }
     
-    // private States State
-    // { 
-    //     set => _animator.SetInteger("state", (int)value);
-    // }
-
     private void RotationCharacter()
     {
         _mousePosition = Camera.main!.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,
@@ -79,14 +71,5 @@ public class PlayerMoveScript : MonoBehaviour
         var dy = _mousePosition.y - transform.position.y;
         var angle = new Vector3(0, 0, Mathf.Atan2(dy, dx) * Mathf.Rad2Deg + shiftRotation);
         _rb.transform.eulerAngles = angle;
-        // angle = new Vector3(0, 0, Mathf.Atan2(y, x) * Mathf.Rad2Deg + shiftRotation);
-        // legs.transform.eulerAngles = angle;
     }
 }
-
-// public enum States
-// {
-//     Idle,
-//     MoveUp,
-//     MoveDown
-// }

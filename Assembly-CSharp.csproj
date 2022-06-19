@@ -49,6 +49,7 @@
      <Compile Include="Assets/Scripts/SpawnerManager.cs" />
      <Compile Include="Assets/Scripts/PrefabManager.cs" />
      <Compile Include="Assets/Scripts/MapGenerator.cs" />
+     <None Include="Assets/Scripts/PrefabsColor.txt" />
      <None Include="Assets/Fonts/justice/justice.txt" />
      <None Include="Assets/Sprites/README.txt" />
      <None Include="Assets/Fonts/shoguns_clan/README.txt" />

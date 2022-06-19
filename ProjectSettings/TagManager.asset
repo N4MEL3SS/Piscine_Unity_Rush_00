@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Tiles
   layers:
   - Default
   - TransparentFX
@@ -39,7 +40,7 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Ground
+  - name: Floor
     uniqueID: 2967188983
     locked: 0
   - name: Default

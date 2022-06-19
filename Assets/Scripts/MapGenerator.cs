@@ -27,11 +27,10 @@ public class MapGenerator : MonoBehaviour
 
 		foreach (var colors in manager)
 		{
-			Debug.Log("x = " + x + ", y = " + y + "\n" + colors.color.Equals(pixelColor));
 			if (colors.color.Equals(pixelColor))
 			{
 				var position = new Vector2(x, y);
-				Instantiate(colors.prefab, position, Quaternion.identity, transform);
+				Instantiate(colors.prefabSprite, position, Quaternion.identity, transform);
 			}
 		}
 	}
