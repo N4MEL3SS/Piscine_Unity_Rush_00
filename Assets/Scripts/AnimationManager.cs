@@ -15,10 +15,10 @@ public class AnimationManager : MonoBehaviour
 		_weaponChange = GetComponent<WeaponChangeScript>();
 	}
 
-	private void Update()
-	{
-		WeaponAnimation(_weaponChange.currentWeaponType);
-	}
+	// private void Update()
+	// {
+	// 	WeaponAnimation(_weaponChange.currentWeaponType);
+	// }
 
 	void WeaponAnimation(string weapons)
 	{
