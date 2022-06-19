@@ -97,5 +97,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbcfdde44f027460887c46040278f1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0.6313726, g: 0.6313726, b: 0.6313726, a: 0}
+  color: {r: 0.6313726, g: 0.6313726, b: 0.6313726, a: 1}
   prefab: {fileID: 6316792325537576448}
