@@ -7,7 +7,7 @@ public class AnimationManager : MonoBehaviour
 	private WeaponChangeScript _weaponChange;
 	private Animator _animator;
 
-	private int _weaponID = 0;
+	private int _weaponID;
 
 	private void Awake()
 	{
@@ -15,68 +15,63 @@ public class AnimationManager : MonoBehaviour
 		_weaponChange = GetComponent<WeaponChangeScript>();
 	}
 
-	// private void Update()
-	// {
-	// 	WeaponAnimation(_weaponChange.currentWeaponType);
-	// }
+	private void Update()
+	{
+		WeaponAnimation(_weaponChange.currentWeaponType);
+	}
 
-	void WeaponAnimation(string weapons)
+	private void WeaponAnimation(string weapons)
 	{
 		switch (weapons)
 		{
-			case "0-Empty":
-				_weaponID = 0;
-				_animator.SetInteger("weapons", _weaponID);
-				break;
 			case "1-Uzi":
 				_weaponID = 1;
-				_animator.SetInteger("weapons", _weaponID);
+				_animator.SetInteger("weaponID", _weaponID);
 				break;
 			case "2-Shotgun":
 				_weaponID = 2;
-				_animator.SetInteger("weapons", _weaponID);
+				_animator.SetInteger("weaponID", _weaponID);
 				break;
 			case "3-Magnum":
 				_weaponID = 3;
-				_animator.SetInteger("weapons", _weaponID);
+				_animator.SetInteger("weaponID", _weaponID);
 				break;
 			case "4-RocketLauncher":
 				_weaponID = 4;
-				_animator.SetInteger("weapons", _weaponID);
+				_animator.SetInteger("weaponID", _weaponID);
 				break;
 			case "5-Saber":
 				_weaponID = 5;
-				_animator.SetInteger("weapons", _weaponID);
+				_animator.SetInteger("weaponID", _weaponID);
 				break;
 			case "6-Cricket":
 				_weaponID = 6;
-				_animator.SetInteger("weapons", _weaponID);
+				_animator.SetInteger("weaponID", _weaponID);
 				break;
 			case "7-NesPistol":
 				_weaponID = 7;
-				_animator.SetInteger("weapons", _weaponID);
+				_animator.SetInteger("weaponID", _weaponID);
 				break;
 			case "8-SubMachineGun":
 				_weaponID = 8;
-				_animator.SetInteger("weapons", _weaponID);
+				_animator.SetInteger("weaponID", _weaponID);
 				break;
 			case "9-MachineGun":
 				_weaponID = 9;
-				_animator.SetInteger("weapons", _weaponID);
+				_animator.SetInteger("weaponID", _weaponID);
 				break;
 			case "10-EnergyPistol":
 				_weaponID = 10;
-				_animator.SetInteger("weapons", _weaponID);
+				_animator.SetInteger("weaponID", _weaponID);
 				break;
 			case "11-Sniper":
 				_weaponID = 11;
-				_animator.SetInteger("weapons", _weaponID);
+				_animator.SetInteger("weaponID", _weaponID);
 				break;
 			case "12-Punch":
 				_weaponID = 12;
-				_animator.SetInteger("weapons", _weaponID);
+				_animator.SetInteger("weaponID", _weaponID);
 				break;
-			
 		}
 	}
 	

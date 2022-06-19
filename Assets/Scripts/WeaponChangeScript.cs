@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponChangeScript : MonoBehaviour
 {
-	public string currentWeaponType;
+	public string currentWeaponType = "Null";
 	public bool inTrigger = false;
 
 	private void Update()
@@ -20,7 +20,7 @@ public class WeaponChangeScript : MonoBehaviour
 
 	public void DropWeapon(string weapon)
 	{
-		if (currentWeaponType != "0-Empty")
+		if (currentWeaponType != "Null")
 		{
 			Instantiate(Resources.Load("Prefabs/Weapons" + weapon), transform.position, Quaternion.identity);
 			if (!inTrigger)
