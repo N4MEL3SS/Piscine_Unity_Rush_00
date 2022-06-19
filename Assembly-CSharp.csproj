@@ -41,11 +41,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Scripts/CameraFollowScript.cs" />
-     <Compile Include="Assets/Scripts/PlayerMoveScript.cs" />
-     <Compile Include="Assets/Scripts/AnimationManager.cs" />
-     <Compile Include="Assets/Scripts/BackgroundColorScript.cs" />
      <Compile Include="Assets/VHS/Scripts/VHSPostProcessEffect.cs" />
+     <Compile Include="Assets/Scripts/BackgroundColorScript.cs" />
+     <Compile Include="Assets/Scripts/CameraFollowScript.cs" />
+     <Compile Include="Assets/Scripts/AnimationManager.cs" />
+     <Compile Include="Assets/Scripts/PlayerMoveScript.cs" />
+     <Compile Include="Assets/Scripts/SpawnerManager.cs" />
+     <Compile Include="Assets/Scripts/PrefabManager.cs" />
+     <Compile Include="Assets/Scripts/MapGenerator.cs" />
      <None Include="Assets/Fonts/justice/justice.txt" />
      <None Include="Assets/Sprites/README.txt" />
      <None Include="Assets/Fonts/shoguns_clan/README.txt" />
